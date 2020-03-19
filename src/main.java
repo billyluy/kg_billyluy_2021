@@ -3,14 +3,17 @@ import java.util.*;
 public class main {
 
     public  static void main(String args[]){
-        String s1 = args[0];
-        String s2 = args[1];
-        if (oneToOneString(s1, s2)) {
-            System.out.println("true");
-        } else {
+        if(args.length == 0){
             System.out.println("false");
+        }else{
+            String s1 = args[0];
+            String s2 = args[1];
+            if (oneToOneString(s1, s2)) {
+                System.out.println("true");
+            } else {
+                System.out.println("false");
+            }
         }
-
     }
 
     public static boolean oneToOneString(String s, String t){
